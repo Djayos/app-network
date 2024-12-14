@@ -29,8 +29,8 @@ jobs:
       run: |
         cd backend
         mvn -B verify sonar:sonar \
-          -Dsonar.projectKey=<YOUR_PROJECT_KEY> \
-          -Dsonar.organization=<YOUR_ORG_KEY> \
+          -Dsonar.projectKey=bigdatadevops \
+          -Dsonar.organization=BigdataDevOps \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
