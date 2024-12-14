@@ -30,7 +30,7 @@ jobs:
         cd backend
         mvn clean verify sonar:sonar \
           -Dsonar.projectKey=Djayos_app-network \
-          -Dsonar.organization=BigdataDevOps \
+          -Dsonar.organization=bigdatadevops \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
